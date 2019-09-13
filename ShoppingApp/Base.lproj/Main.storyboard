@@ -37,7 +37,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGk-Mf-chQ">
-                                <rect key="frame" x="20" y="438" width="335" height="40"/>
+                                <rect key="frame" x="20" y="428" width="335" height="40"/>
                                 <color key="backgroundColor" red="0.1471548842" green="0.4189240206" blue="0.58049303760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Oo7-cS-7OI"/>
@@ -66,7 +66,7 @@
                             <constraint firstItem="fp8-7U-0Dr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="KrA-A3-T2D"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a1p-rF-sJv" secondAttribute="trailing" constant="20" id="Ozy-NP-zTX"/>
                             <constraint firstItem="hGk-Mf-chQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rzl-gn-fcx"/>
-                            <constraint firstItem="hGk-Mf-chQ" firstAttribute="top" secondItem="cX1-A5-nbi" secondAttribute="bottom" constant="30" id="XFn-nb-bdY"/>
+                            <constraint firstItem="hGk-Mf-chQ" firstAttribute="top" secondItem="cX1-A5-nbi" secondAttribute="bottom" constant="20" id="XFn-nb-bdY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cX1-A5-nbi" secondAttribute="trailing" constant="20" id="Yo1-fN-ybX"/>
                             <constraint firstItem="hGk-Mf-chQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yy4-kY-1gl"/>
                             <constraint firstItem="a1p-rF-sJv" firstAttribute="top" secondItem="fp8-7U-0Dr" secondAttribute="bottom" constant="50" id="bic-yi-2z2"/>
