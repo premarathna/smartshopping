@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		CBB6B654232BEC1700551482 /* ShoppingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBB6B652232BEC1700551482 /* ShoppingApp.xcdatamodeld */; };
 		CBB6B656232BEC1A00551482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB6B655232BEC1A00551482 /* Assets.xcassets */; };
 		CBB6B659232BEC1A00551482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB6B657232BEC1A00551482 /* LaunchScreen.storyboard */; };
+		F5DE145B232E1E1F0095489B /* 1370452-online-shopping-clip-art-online-shopping-png-clipart-shopping-png-900_460_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DE145A232E1E1F0095489B /* 1370452-online-shopping-clip-art-online-shopping-png-clipart-shopping-png-900_460_preview.png */; };
+		F5DE145D232EAB0F0095489B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DE145C232EAB0F0095489B /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CBB6B655232BEC1A00551482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB6B658232BEC1A00551482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB6B65A232BEC1A00551482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DE145A232E1E1F0095489B /* 1370452-online-shopping-clip-art-online-shopping-png-clipart-shopping-png-900_460_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1370452-online-shopping-clip-art-online-shopping-png-clipart-shopping-png-900_460_preview.png"; sourceTree = SOURCE_ROOT; };
+		F5DE145C232EAB0F0095489B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +77,12 @@
 		CBB6B64A232BEC1700551482 /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				F5DE145A232E1E1F0095489B /* 1370452-online-shopping-clip-art-online-shopping-png-clipart-shopping-png-900_460_preview.png */,
 				CBB6B64B232BEC1700551482 /* AppDelegate.swift */,
 				CB12BB01232D224000217352 /* homeBuy.swift */,
 				CBB6B64D232BEC1700551482 /* ViewController.swift */,
 				CBB6B64F232BEC1700551482 /* Main.storyboard */,
+				F5DE145C232EAB0F0095489B /* CollectionViewCell.swift */,
 				CBB6B655232BEC1A00551482 /* Assets.xcassets */,
 				CBB6B657232BEC1A00551482 /* LaunchScreen.storyboard */,
 				CBB6B65A232BEC1A00551482 /* Info.plist */,
@@ -91,7 +97,6 @@
 				4E5E67571990C07599F06CDC /* Pods-ShoppingApp.debug.xcconfig */,
 				1F73CACCBFE56D4C60E7D472 /* Pods-ShoppingApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DE145B232E1E1F0095489B /* 1370452-online-shopping-clip-art-online-shopping-png-clipart-shopping-png-900_460_preview.png in Resources */,
 				CBB6B659232BEC1A00551482 /* LaunchScreen.storyboard in Resources */,
 				CBB6B656232BEC1A00551482 /* Assets.xcassets in Resources */,
 				CBB6B651232BEC1700551482 /* Main.storyboard in Resources */,
@@ -210,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DE145D232EAB0F0095489B /* CollectionViewCell.swift in Sources */,
 				CBB6B64E232BEC1700551482 /* ViewController.swift in Sources */,
 				CB12BB02232D224000217352 /* homeBuy.swift in Sources */,
 				CBB6B654232BEC1700551482 /* ShoppingApp.xcdatamodeld in Sources */,
