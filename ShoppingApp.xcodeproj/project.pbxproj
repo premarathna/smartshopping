@@ -17,6 +17,7 @@
 		CBB6B659232BEC1A00551482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB6B657232BEC1A00551482 /* LaunchScreen.storyboard */; };
 		F5DE145B232E1E1F0095489B /* 1370452-online-shopping-clip-art-online-shopping-png-clipart-shopping-png-900_460_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DE145A232E1E1F0095489B /* 1370452-online-shopping-clip-art-online-shopping-png-clipart-shopping-png-900_460_preview.png */; };
 		F5DE145D232EAB0F0095489B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DE145C232EAB0F0095489B /* CollectionViewCell.swift */; };
+		F5EE50A723315AAA00670718 /* SellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE50A623315AAA00670718 /* SellerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CBB6B65A232BEC1A00551482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5DE145A232E1E1F0095489B /* 1370452-online-shopping-clip-art-online-shopping-png-clipart-shopping-png-900_460_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1370452-online-shopping-clip-art-online-shopping-png-clipart-shopping-png-900_460_preview.png"; sourceTree = SOURCE_ROOT; };
 		F5DE145C232EAB0F0095489B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F5EE50A623315AAA00670718 /* SellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				CBB6B64B232BEC1700551482 /* AppDelegate.swift */,
 				CB12BB01232D224000217352 /* homeBuy.swift */,
 				CBB6B64D232BEC1700551482 /* ViewController.swift */,
+				F5EE50A623315AAA00670718 /* SellerViewController.swift */,
 				CBB6B64F232BEC1700551482 /* Main.storyboard */,
 				F5DE145C232EAB0F0095489B /* CollectionViewCell.swift */,
 				CBB6B655232BEC1A00551482 /* Assets.xcassets */,
@@ -219,6 +222,7 @@
 				F5DE145D232EAB0F0095489B /* CollectionViewCell.swift in Sources */,
 				CBB6B64E232BEC1700551482 /* ViewController.swift in Sources */,
 				CB12BB02232D224000217352 /* homeBuy.swift in Sources */,
+				F5EE50A723315AAA00670718 /* SellerViewController.swift in Sources */,
 				CBB6B654232BEC1700551482 /* ShoppingApp.xcdatamodeld in Sources */,
 				CBB6B64C232BEC1700551482 /* AppDelegate.swift in Sources */,
 			);
@@ -368,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N8P5HHG5M;
 				INFOPLIST_FILE = ShoppingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -386,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N8P5HHG5M;
 				INFOPLIST_FILE = ShoppingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
