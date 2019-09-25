@@ -17,25 +17,32 @@ class SellerViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var nameTxt: UITextField!
     @IBOutlet weak var locationTxt: UITextField!
     @IBOutlet weak var otherTxt: UITextField!
+    @IBOutlet weak var btnAdd: UIButton!
     
     let locationManager = CLLocationManager()
     var location: String?
     var itemImage: UIImage?
     var latitude: Double?
     var longitude: Double?
+    var price: Double?
+    var name: String?
+    var desc: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.hideKeyboardOnTap()
         checkLocationServices()
+        
     }
     
     @IBAction func btnAdd(_ sender: Any) {
         
+        if  !self.nameTxt.text!.isEmpty && !self.priceTxt.text!.isEmpty && !self.otherTxt.text!.isEmpty && !self.imageView.image!.isProxy() && !self.locationTxt.text!.isEmpty
+{
         var imageData: Data?
         
-        print("WTF is happening")
+        print("------")
         
         if let itemImage = itemImage {
             imageData = itemImage.jpegData(compressionQuality: 0.5)
@@ -55,7 +62,20 @@ class SellerViewController: UIViewController, UIImagePickerControllerDelegate, U
         items.longitude = longitude!
 
         try!  context.save()
+        
+        nameTxt.text = ""
+        priceTxt.text = ""
+        otherTxt.text = ""
+        imageView.image = nil
+        }
+        
+        else{
+            let alert = UIAlertController(title: "Warning!", message: "Fill all the fields", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)        }
     }
+    
+
     
     @IBAction func btnTakeImage(_ sender: Any) {
         
