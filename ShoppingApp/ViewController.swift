@@ -18,12 +18,11 @@ class ViewController: UIViewController {
     
     @IBAction func btnSignIn(_ sender: UIButton) {
         
-        self.showViewController()
         let urlString = "https://reqres.in/api/login"
     
         Alamofire.request(urlString,
                           method: .post,
-                          parameters: ["email":"eve.holt@reqres.in","password": "cityslicka"],
+                          parameters: ["email": userName.text ?? "","password": password.text ?? ""],
                           encoding: JSONEncoding.default,
                           headers: nil).responseJSON {
                             response in
@@ -32,7 +31,7 @@ class ViewController: UIViewController {
                                 print("------------------")
                                 print(response)
                                 
-//                                self.showViewController()
+                                self.showViewController()
                                 
                                 break
                             case .failure(let error):
@@ -48,7 +47,7 @@ class ViewController: UIViewController {
         
         Alamofire.request(urlString,
                           method: .post,
-                          parameters: ["email":"eve.holt@reqres.in","password": "cityslicka"],
+                          parameters: ["email": userName.text ?? "","password": password.text ?? ""],
                           encoding: JSONEncoding.default,
                           headers: nil).responseJSON {
                             response in

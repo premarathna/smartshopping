@@ -15,6 +15,7 @@ class homeBuy: UIViewController {
     @IBOutlet weak var uiCollection: UICollectionView!
     var itemList: [Items] = []
     var displayItemList: [Items] = []
+    var selectedItem: Items?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,6 +80,11 @@ extension homeBuy: UICollectionViewDelegate, UICollectionViewDataSource {
         return cell
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedItem = self.displayItemList[indexPath.item]
+        performSegue(withIdentifier: "buyerViewSegue", sender: self)
+    }
 }
 
 extension homeBuy: UISearchBarDelegate {
@@ -91,5 +97,13 @@ extension homeBuy: UISearchBarDelegate {
         }
         
         self.uiCollection.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "buyerViewSegue" {
+            if let nextViewController = segue.destination as? buyerView {
+                nextViewController.item = selectedItem
+            }
+        }
     }
 }
